@@ -168,6 +168,7 @@
 									</div>
 									<div class="text-center">
   										<img src="images/googlemap.png" style="height:60px;" class="rounded" alt="...">
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-lat='21.03' data-lng='105.85'>Engagement Location</button>
 										</div>
 								</div>
 								
@@ -188,6 +189,7 @@
 									</div>
 									<div class="text-center">
   										<img src="images/googlemap.png" style="height:60px;" class="rounded" alt="...">
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-lat='21.03' data-lng='105.85'>Wedding Location</button>
 										</div>
 								</div>
 								
@@ -490,7 +492,36 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+	  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12 modal_body_content">
+              <p>Some contents...</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 modal_body_map">
+              <div class="location-map" id="location-map">
+                <div style="width: 600px; height: 400px;" id="map_canvas"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 modal_body_end">
+              <p>Else...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -514,7 +545,8 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+        <script src="//maps.googleapis.com/maps/api/js"></script>
+	  <script src="js/script.js"></script>
 	<script>
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
