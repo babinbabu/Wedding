@@ -153,7 +153,7 @@
 			smartSpeed: 800,
 			autoHeight: true,
 			autoplay:true,
-    			autoplayTimeout:1000,
+    			autoplayTimeout:5000,
     			autoplayHoverPause:true
 		});
 	};
