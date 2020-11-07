@@ -152,6 +152,9 @@
 			dots: true,
 			smartSpeed: 800,
 			autoHeight: true,
+			autoplay:true,
+    			autoplayTimeout:1000,
+    			autoplayHoverPause:true
 		});
 	};
 
