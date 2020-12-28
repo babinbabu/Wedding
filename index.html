@@ -590,12 +590,12 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">YouTube Video</h5>
+                    <h5 class="modal-title">YouTube Live Telecast</h5>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                   <div class="embed-responsive embed-responsive-16by9">
-                    <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" src="https://youtu.be/lotXpQjRc-8" allowfullscreen></iframe>
+                    <iframe id="cartoonVideo" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/lotXpQjRc-8" allowfullscreen></iframe>
                   </div>
                 </div>
             </div>
@@ -650,7 +650,6 @@
     /* Get iframe src attribute value i.e. YouTube video url
     and store it in a variable */
     var url = $("#cartoonVideo").attr('src');
-    url=url + "&output=embed";
     /* Assign empty url value to the iframe src attribute when
     modal hide, which stop the video playing */
     $("#youtube").on('hide.bs.modal', function(){
